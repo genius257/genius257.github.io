@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>green-tag.dk</title>
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+            }
+            body {
+                background-color: #333;
+            }
+            svg {
+                display: block;
+                margin: 64px auto 0;
+            }
+
+            img {
+                filter: invert(100%);
+                opacity: 0.5;
+                transition: opacity 1s;
+            }
+
+            img:hover {
+                opacity: 1;
+            }
+
+            div {
+                margin-top: 64px;
+                display: flex;
+                justify-content: space-evenly;
+            }
+        </style>
+    </head>
+    <body>
+        <svg
+            width=256
+            height=256
+            viewbox="0 0 512 512"
+            xmlns:svg="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 707.96002 666.65332"
+        >
+                <defs>
+                    <filter id="dropshadow" height="130%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
+                        <feOffset dx="2" dy="2" result="offsetblur"/> 
+                        <feMerge> 
+                        <feMergeNode/>
+                        <feMergeNode in="SourceGraphic"/> 
+                        </feMerge>
+                    </filter>
+                </defs>
+            <path d="M128 0 L0 256 L128 512 L256 512 L128 256 L224 0 Z" fill="#207735"/>
+            <path d="M256 0 L384 0 L512 256 L384 512 L288 512 L384 256 Z" fill="#207735"/>
+            <path d="M128 512 L256 512 L384 0 L256 0 Z" fill="#39d35e"/>
+        </svg>
+        <div>
+            <a href="https://github.com/genius257"><img src="github-brands.svg" width="128" height="128" alt="github" /></a>
+            <a href="https://www.linkedin.com/in/anders-ørbæk-pedersen-1847a468"><img src="linkedin-in-brands.svg" width="128" height="128" alt="linkedin" /></a>
+        </div>
+    </body>
+</html>
