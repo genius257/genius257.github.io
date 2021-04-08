@@ -34,6 +34,39 @@
                 justify-content: space-evenly;
             }
         </style>
+        <style>
+            path {
+                stroke: black;
+                stroke-opacity: 100%;
+                fill-opacity: 0%;
+            }
+
+            path:nth-of-type(1), path:nth-of-type(2) {
+                stroke-dasharray: 1357;
+                stroke-dashoffset: 1357;
+                animation: logo 4s ease forwards, fadein 4s ease forwards 4s;
+            }
+
+            path:nth-of-type(3) {
+                stroke-dasharray: 1312;
+                stroke-dashoffset: 1312;
+                animation: logo 4s ease forwards, fadein 4s ease forwards 4s;
+            }
+
+            @keyframes logo {
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+
+            @keyframes fadein {
+                to {
+                    stroke-opacity: 0%;
+                    fill-opacity: 100%;
+                }
+            }
+
+        </style>
     </head>
     <body>
         <svg
